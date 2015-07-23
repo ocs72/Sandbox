@@ -2,6 +2,7 @@
   "name": "WebApplication",
   "private": true,
   "dependencies": {
+    "angular": "1.4.3",
     "bootstrap": "3.0.0",
     "bootstrap-touch-carousel": "0.8.0",
     "hammer.js": "2.0.4",
