@@ -1,5 +1,0 @@
-C:\Source\Sandbox\DAL\bin\Debug\DAL.dll
-C:\Source\Sandbox\DAL\bin\Debug\DAL.pdb
-C:\Source\Sandbox\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
-C:\Source\Sandbox\DAL\obj\Debug\DAL.dll
-C:\Source\Sandbox\DAL\obj\Debug\DAL.pdb
