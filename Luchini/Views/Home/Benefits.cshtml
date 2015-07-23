@@ -1,0 +1,70 @@
+﻿@model Luchini.Models.BenefitModel
+
+@{
+    ViewBag.Title = "Benefits";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/bundles/benefits")
+
+<script type="text/javascript">
+	$(function () {
+	    benefitPage.benefitPageStartup();
+	});
+</script>
+
+<h2>Benefits</h2>
+
+<input type="hidden" id="urls"
+       data-url-calculate='@Url.Action("Calculate")'/>
+
+@using (Html.BeginForm("CalculateBenefits"))
+{
+    <div class="form-group">
+		<label>Employee</label>
+		<table id="employeeTable" data-toggle="table" data-cache="false" data-height="299">
+			<tbody>
+				<tr>
+					<td>
+						@Html.EditorFor(m => m.Employee)
+						@Html.ValidationMessageFor(m => m.Employee)
+					</td>
+				</tr>
+			</tbody>		
+		</table>
+        <table id="dependentTable" data-toggle="table" data-url="@Url.Action("Calculate")" data-cache="false" data-height="299">
+            <thead>
+                <tr>
+                    <th>Dependents</th>
+                </tr>
+            </thead>
+            <tbody>
+				@for (int i = 0; i < Model.Dependents.Count; i++)
+				{
+					@Html.Raw("<tr><td>")
+					@Html.EditorFor(m => Model.Dependents[i])
+					@Html.Raw("</td></tr>")
+				}
+            </tbody>
+        </table>
+    </div>
+    <div class="form-group">
+        <button class="btn-default btn" id="addDependent">Add Dependent</button>
+        <button class="btn-default btn" id="removeDependent">Remove Dependent</button>
+        <button class="btn-default btn" id="calculate">Calculate</button>
+    </div>
+    <div class="form-group">
+        <label>Benefit Cost Total:</label>
+        <label id="benefitYear"></label>
+        <br />
+        <label>Benefit Cost Per Check:</label>
+        <label id="benefitCheck"></label>
+    </div>
+    <div class="form-group">
+        <label>Total Yearly Cost:</label>
+        <label id="totalYear"></label>
+        <br />
+        <label>Total Cost Per Pay Period:</label>
+        <label id="totalCheck"></label>
+    </div>
+}
