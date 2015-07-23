@@ -105,10 +105,6 @@
       <Project>{de61c4e2-9526-4bc6-846a-e256bdb50bf5}</Project>
       <Name>DAL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Luchini\Luchini.csproj">
-      <Project>{7B642180-2BCD-4CB1-BB75-9F2365CE3CC4}</Project>
-      <Name>Luchini</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
