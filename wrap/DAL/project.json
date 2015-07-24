@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net45": {
+      "wrappedProject": "../../DAL/DAL.csproj",
+      "bin": {
+        "assembly": "../../DAL/obj/{configuration}/DAL.dll",
+        "pdb": "../../DAL/obj/{configuration}/DAL.pdb"
+      }
+    }
+  }
+}

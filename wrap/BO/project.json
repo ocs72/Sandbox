@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net45": {
+      "wrappedProject": "../../BO/BO.csproj",
+      "bin": {
+        "assembly": "../../BO/obj/{configuration}/BO.dll",
+        "pdb": "../../BO/obj/{configuration}/BO.pdb"
+      },
+      "dependencies": {
+        "Autofac": "3.5.2",
+        "DAL": "1.0.0-*"
+      }
+    }
+  }
+}
