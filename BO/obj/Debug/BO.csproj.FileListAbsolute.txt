@@ -1,9 +1,0 @@
-C:\Source\Sandbox\BO\bin\Debug\BO.dll
-C:\Source\Sandbox\BO\bin\Debug\BO.pdb
-C:\Source\Sandbox\BO\bin\Debug\Autofac.dll
-C:\Source\Sandbox\BO\bin\Debug\DAL.dll
-C:\Source\Sandbox\BO\bin\Debug\DAL.pdb
-C:\Source\Sandbox\BO\bin\Debug\Autofac.xml
-C:\Source\Sandbox\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
-C:\Source\Sandbox\BO\obj\Debug\BO.dll
-C:\Source\Sandbox\BO\obj\Debug\BO.pdb
